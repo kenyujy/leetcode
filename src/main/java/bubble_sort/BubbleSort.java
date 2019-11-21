@@ -8,52 +8,9 @@ public class BubbleSort<T> {
 
     public static void main(String[] args) {
 
-        List<Integer> list= new ArrayList<Integer>();
-        list.add(5);
-        list.add(3);
-        list.add(6);
-        list.add(100);
-        list.add(8);
-        list.add(2);
-        list.add(9);
-        list.add(88);
-        list.add(12);
-        list.add(66);
-        list.add(55);
-        list.add(18);
-
-        List<String> list2= new ArrayList<String>();
-        list2.add("Go");
-        list2.add("k");
-        list2.add("b");
-        list2.add("hi");
-        list2.add("H");
-        list2.add("CD");
-        list2.add("lol");
-        list2.add("aq");
-        list2.add("aa");
-        list2.add("cd");
-        list2.add("A");
-        list2.add("中文");
-        list2.add("啊");
-        list2.add("英文");
-        list2.add("法文");
-
-        /*
-        System.out.println(list2);
-        bubbleSortStr(list2);
-
-        System.out.println(list2);
-
-        System.out.println(compareStr("中","华"));
-        System.out.println(compareStr("我","你"));
-        System.out.println("我你".charAt(0));
-
-         */
-
-        List<Integer> list5=new ArrayList<>();
+        List<Integer> list5=new ArrayList<Integer>();
         Random r= new Random();
-        for (int i=0; i<10000; i++){
+        for (int i=0; i<1000000; i++){
             list5.add(r.nextInt(1000));
         }
 
@@ -109,7 +66,7 @@ public class BubbleSort<T> {
 
     public static List<Integer> merge(List<Integer> left, List<Integer> right) {
 
-        List<Integer> mergeList = new ArrayList<>();
+        List<Integer> mergeList = new ArrayList<Integer>();
 
         int leftIndex=0; // 下标操作，交替遍历
         int rightIndex=0; // 下标操作，交替遍历

@@ -46,7 +46,7 @@ public class MergerSort {
         List left= list.subList(0, mid);   // 注意某些情况 right 会比left大
         List right= list.subList(mid, size);
 
-        return merge(mergeSort(left),mergeSort(right));  // 用了递归的方法
+        return merge(mergeSort(left), mergeSort(right));  // 用了递归的方法
     }
 
     public static List<Integer> merge(List<Integer> left, List<Integer> right) {
