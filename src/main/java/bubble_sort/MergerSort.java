@@ -67,7 +67,7 @@ public class MergerSort {
             // 2个index 都有可能先到末尾
         }
 
-        // 这里的条件注意, 上面的插入排序完了以后某一个Index= list 的 size
+        // 这里的条件注意, 上面的插入排序完了以后某一个Index= list 的 size= list.size()
         if (leftIndex < left.size()){  // right reaches to it end, add those left by left
             for (int i= leftIndex; i<left.size(); i++)
                 mergeList.add(left.get(i));
