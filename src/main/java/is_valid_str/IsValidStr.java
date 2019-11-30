@@ -19,7 +19,7 @@ public class IsValidStr {
     }
 
     public static boolean isValidStr(String s){
-        if (s.length()==0){
+        if (s.length()==0){ //recursive base case
             return true;
         }
         StringBuffer expression=new StringBuffer();
