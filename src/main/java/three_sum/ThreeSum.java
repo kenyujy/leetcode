@@ -21,8 +21,8 @@ public class ThreeSum {
         List<Integer> l2= new ArrayList<>();
 
         for (int i=0; i<num.length; i++){
-            for(int j=i+1; j<num.length-i; j++){
-                for(int k=j+1; k<num.length-j; k++){
+            for(int j=i+1; j<num.length; j++){
+                for(int k=j+1; k<num.length; k++){
                     if(num[i]+ num[j]+ num[k] ==0){
                         list.add(Arrays.asList(num[i], num[j], num[k]));
                     }
