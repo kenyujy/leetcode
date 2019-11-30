@@ -44,8 +44,8 @@ public class IsValidStr {
                     if (countLeft1 < 0)
                         return false;
                     //一旦闭合则取出闭合表达式，判断是否有效
-                    String expressionSubStr= expression.substring(expression.lastIndexOf("(")+1, expression.length()-1); //边界问题
-                    if (isValidStr(expressionSubStr)) { //递归
+                    String expressionSubStr= expression.substring(expression.lastIndexOf("(")+1, expression.length()-1); //边界问题调试
+                    if (isValidStr(expressionSubStr)) { //递归调用自身
                         expression= expression.delete(expression.lastIndexOf("("), expression.length()+1); //有效则去除闭合表达式，继续判断
                         break;
                     }
@@ -56,8 +56,8 @@ public class IsValidStr {
                     if (countLeft2 < 0)
                         return false;
                     //一旦闭合则取出闭合表达式，判断是否有效
-                    String expressionSubStr= expression.substring(expression.lastIndexOf("{")+1, expression.length()-1);
-                    if (isValidStr(expressionSubStr)) { //递归
+                    String expressionSubStr= expression.substring(expression.lastIndexOf("{")+1, expression.length()-1); //边界问题调试
+                    if (isValidStr(expressionSubStr)) { //递归调用自身
                         expression= expression.delete(expression.lastIndexOf("{"), expression.length()+1); //有效则去除闭合表达式，继续判断
                         break;
                     }
@@ -68,8 +68,8 @@ public class IsValidStr {
                     if (countLeft3 < 0)
                         return false;
                     //一旦闭合则取出闭合表达式，判断是否有效
-                    String expressionSubStr= expression.substring(expression.lastIndexOf("[")+1, expression.length()-1);
-                    if (isValidStr(expressionSubStr)) { //递归
+                    String expressionSubStr= expression.substring(expression.lastIndexOf("[")+1, expression.length()-1); //边界问题调试
+                    if (isValidStr(expressionSubStr)) { //递归调用自身
                         expression= expression.delete(expression.lastIndexOf("["), expression.length()+1); //有效则去除闭合表达式，继续判断
                         break;
                     }
